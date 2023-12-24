@@ -85,7 +85,7 @@ body {
 .greeting {
   position: relative;
   min-height: 100vh;
-  background: url("assets/main_bg.png") no-repeat;
+  background: url("../assets/main_bg.png") no-repeat;
   background-size: cover;
   min-width: 100%;
   display: flex;

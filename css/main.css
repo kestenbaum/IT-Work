@@ -85,7 +85,7 @@ body {
 .greeting {
   position: relative;
   min-height: 100vh;
-  background: url("../img/main_bg.png") no-repeat;
+  background: url("assets/main_bg.png") no-repeat;
   background-size: cover;
   min-width: 100%;
   display: flex;
@@ -382,7 +382,7 @@ body {
 .services {
   display: flex;
   justify-content: center;
-  background: url("../img/services_bg.png") no-repeat;
+  background: url("assets/services_bg.png") no-repeat;
   background-size: cover;
 }
 @media all and (max-width: 800px) {
@@ -613,32 +613,32 @@ body {
 }
 
 .topworkz {
-  background: url("../img/top.png") no-repeat;
+  background: url("assets/top.png") no-repeat;
   background-size: cover;
 }
 
 .worktop {
-  background: url("../img/wor.png") no-repeat;
+  background: url("assets/wor.png") no-repeat;
   background-size: cover;
 }
 
 .joint {
-  background: url("../img/joi.png") no-repeat;
+  background: url("assets/joi.png") no-repeat;
   background-size: cover;
 }
 
 .lable {
-  background: url("../img/lab.png") no-repeat;
+  background: url("assets/lab.png") no-repeat;
   background-size: cover;
 }
 
 .market {
-  background: url("../img/mar.png") no-repeat;
+  background: url("assets/mar.png") no-repeat;
   background-size: cover;
 }
 
 .kyiv {
-  background: url("../img/kiyv.png") no-repeat;
+  background: url("assets/kiyv.png") no-repeat;
   background-size: cover;
 }
 

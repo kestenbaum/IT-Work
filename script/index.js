@@ -1,14 +1,16 @@
-//const
-const getSelectorBurger = document.querySelector('.burger')
-const getSelectorHeaderNavigate = document.querySelector('.header_nav')
-const getSelectorHeaderNavigateLink = document.querySelectorAll('.nav_link')
+const getSelectorHeroDescription = document.querySelector('.hero__description')
+const text = "We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, design and product management."
 
-//Scroll
-window.onscroll = () => window.scrollY > 100 ? getSelectorBurger.style.cssText = 'background: #A5B0C3' : null
+let index = 0;
 
-//BurgerMenu functional
-getSelectorBurger.onclick = () => getSelectorHeaderNavigate.classList.toggle('header_active')
 
-for (let element of getSelectorHeaderNavigateLink){
-    element.onclick = () => getSelectorHeaderNavigate.classList.remove('header_active')
+function typedTextHeroDescription() {
+    if (index < text.length) {
+        getSelectorHeroDescription.textContent += text.charAt(index);
+        index++;
+        setTimeout(typedTextHeroDescription, 25);
+    }
 }
+
+typedTextHeroDescription();
+

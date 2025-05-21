@@ -47,8 +47,21 @@ body {
     text-align: center;
     margin-bottom: 2rem;
     line-height: 1.2;
+    opacity: 0;
+    transform: translateY(-50px) rotateX(45deg);
+    animation: dropIn 1s ease-out forwards;
 }
 
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px) rotateX(45deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
 
 .hero__description {
     font-weight: 400;

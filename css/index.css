@@ -5,12 +5,16 @@ html {
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
 }
 
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -21,6 +25,32 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+}
+
+.section__content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: fadeDown 0.6s ease forwards;
+}
+
+.section__content p {
+    font-size: 1.125rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero {
@@ -80,6 +110,59 @@ body {
     max-height: 38px;
 }
 
+.accordion-button {
+    position: relative;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    background-color: white;
+    margin-bottom: .5rem;
+}
+
+.accordion-button:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion-button .arrow {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    rotate: 45deg;
+}
+
+.accordion-button.active .arrow {
+    rotate: -135deg;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    background-color: #fafafa;
+    color: #444;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-content p {
+    margin: 1rem 0;
+}
+
+
 .title {
     display: flex;
     justify-content: center;
@@ -91,43 +174,11 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
-.title:last-child {
-    font-size: 30px;
-    top: -2px;
-}
-
-
-.title_about, .title_question, .title_contact {
-    position: absolute;
-}
 
 .title_services {
     position: absolute;
     color: white;
     background: transparent;
-}
-
-
-.about {
-    padding: 146px 0 159px 0;
-}
-
-.about_wrap {
-    max-width: 556px;
-    margin: 77px 0 53px 0;
-}
-
-.about_wrap span {
-    display: flex;
-    font-size: 16px;
-    text-align: center;
-    color: #3C3C3C;
-    font-weight: 300;
-    line-height: 1.5;
-}
-.about_wrap span:first-child {
-    margin-bottom: 25px;
-    line-height: 1.5;
 }
 
 .services {
@@ -145,6 +196,7 @@ body {
     border-right: 2px solid white;
     position: relative;
 }
+
 .services_container:after {
     content: "";
     position: absolute;
@@ -205,6 +257,7 @@ body {
     height: 84px;
     margin-bottom: 46px;
 }
+
 .card span {
     font-size: 33px;
     color: #3C3C3C;
@@ -213,6 +266,7 @@ body {
     font-weight: 700;
     line-height: 1.5;
 }
+
 .card span:last-child {
     font-size: 14px;
     font-weight: 300;
@@ -240,10 +294,12 @@ body {
     flex: 0 0 33.333%;
     margin: 0 5px;
 }
+
 .col_img:first-child {
     flex: 1 1 33.333%;
     margin-right: 5px;
 }
+
 .col_img:last-child {
     flex: 1 1 33.333%;
     margin-left: 5px;
@@ -258,9 +314,11 @@ body {
     margin: 5px 0;
     cursor: pointer;
 }
+
 .item_img:hover span {
     color: white;
 }
+
 .item_img span {
     position: absolute;
     bottom: 42px;
@@ -309,7 +367,6 @@ body {
 }
 
 
-
 .contact_container {
     position: relative;
     display: flex;
@@ -323,6 +380,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .contact_wrap span {
     margin: 80px 0 41px 0;
     font-size: 16px;
@@ -342,6 +400,7 @@ body {
     background: #3C3C3C;
     margin-bottom: 50px;
 }
+
 .contact_wrap a span {
     font-size: 16px;
     text-transform: uppercase;
@@ -374,6 +433,7 @@ body {
 .link_wrap {
     margin-left: 36px;
 }
+
 .link_wrap a {
     flex: 1 1 80%;
     font-size: 14px;

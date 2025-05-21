@@ -16,7 +16,6 @@ buttons.forEach(button => {
             content.style.paddingBottom = '0';
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
-            content.style.paddingBottom = '1rem';
         }
         
         document.querySelectorAll('.accordion-content').forEach(c => c.style.maxHeight = null);
@@ -36,6 +35,20 @@ function typedTextHeroDescription() {
         setTimeout(typedTextHeroDescription, 25);
     }
 }
+
+const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    }
+});
 
 typedTextHeroDescription();
 

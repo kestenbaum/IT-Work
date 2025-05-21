@@ -4,14 +4,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    color: #222;
-    margin: 0;
-    line-height: 1.6;
-}
-
 .container {
     width: 100%;
     max-width: 960px;
@@ -54,7 +46,6 @@ body {
 }
 
 .hero {
-    position: relative;
     background: url("../assets/main_bg.png") no-repeat;
     background-size: cover;
 }
@@ -166,7 +157,6 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    position: relative;
     top: -28px;
     background: white;
     font-size: 56px;
@@ -176,7 +166,6 @@ body {
 }
 
 .title_services {
-    position: absolute;
     color: white;
     background: transparent;
 }
@@ -194,28 +183,9 @@ body {
     border-left: 2px solid white;
     border-bottom: 2px solid white;
     border-right: 2px solid white;
-    position: relative;
 }
 
-.services_container:after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background: white;
-    width: 250px;
-    top: 0;
-    left: 0;
-}
 
-.services_container:before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background: white;
-    width: 250px;
-    top: 0;
-    right: 0;
-}
 
 .services_wrap {
     display: flex;
@@ -241,7 +211,6 @@ body {
     margin: 105px 0 114px 0;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .card {
@@ -305,61 +274,7 @@ body {
     margin-left: 5px;
 }
 
-.item_img {
-    position: relative;
-    display: flex;
-    height: 237px;
-    max-width: 802px;
-    width: 100%;
-    margin: 5px 0;
-    cursor: pointer;
-}
 
-.item_img:hover span {
-    color: white;
-}
-
-.item_img span {
-    position: absolute;
-    bottom: 42px;
-    left: 42px;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: transparent;
-    line-height: 1.5;
-    transition: all 1s linear;
-}
-
-.topworkz {
-    background: url("assets/top.png") no-repeat;
-    background-size: cover;
-}
-
-.worktop {
-    background: url("assets/wor.png") no-repeat;
-    background-size: cover;
-}
-
-.joint {
-    background: url("assets/joi.png") no-repeat;
-    background-size: cover;
-}
-
-.lable {
-    background: url("assets/lab.png") no-repeat;
-    background-size: cover;
-}
-
-.market {
-    background: url("assets/mar.png") no-repeat;
-    background-size: cover;
-}
-
-.kyiv {
-    background: url("assets/kiyv.png") no-repeat;
-    background-size: cover;
-}
 
 .contact {
     display: flex;
@@ -368,7 +283,6 @@ body {
 
 
 .contact_container {
-    position: relative;
     display: flex;
     justify-content: center;
     margin: 137px 0 77px 0;
@@ -442,3 +356,53 @@ body {
     line-height: 1.5;
 }
 
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 12px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #666 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+
+
+
+.slide-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.slide-item img {
+    height: 50px;
+    width: 50px;
+    padding: 10px 0 10px 10px;
+}
+
+.slide-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

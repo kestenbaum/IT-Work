@@ -60,19 +60,6 @@ body {
 .burger {
     display: none;
 }
-@media all and (max-width: 650px) {
-    .burger {
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        justify-content: flex-end;
-        align-items: center;
-        z-index: 999;
-    }
-}
 
 .burger_wrap {
     display: flex;
@@ -108,20 +95,10 @@ body {
 .logo_main {
     margin-bottom: 73px;
 }
-@media all and (max-width: 450px) {
-    .logo_main {
-        margin: 50px 0;
-    }
-}
+
 .logo_main img {
     max-width: 65px;
     max-height: 69px;
-}
-@media all and (max-width: 800px) {
-    .logo_main img {
-        max-width: 45px;
-        max-height: 49px;
-    }
 }
 
 .title_main {
@@ -134,17 +111,7 @@ body {
     margin-bottom: 53px;
     line-height: 1.2;
 }
-@media all and (max-width: 800px) {
-    .title_main {
-        font-size: 36px;
-        padding: 0 10px;
-    }
-}
-@media all and (max-width: 450px) {
-    .title_main {
-        font-size: 24px;
-    }
-}
+
 
 .description {
     font-weight: 400;
@@ -156,17 +123,7 @@ body {
     line-height: 1.5;
     text-transform: uppercase;
 }
-@media all and (max-width: 850px) {
-    .description {
-        max-width: 373px;
-        padding: 0 10px;
-    }
-}
-@media all and (max-width: 450px) {
-    .description {
-        margin-bottom: 50px;
-    }
-}
+
 
 .scroll img {
     max-width: 24px;
@@ -188,18 +145,7 @@ body {
     font-size: 30px;
     top: -2px;
 }
-@media all and (max-width: 650px) {
-    .title {
-        font-size: 36px;
-        top: -18px;
-    }
-}
-@media all and (max-width: 450px) {
-    .title {
-        font-size: 20px;
-        top: -10px;
-    }
-}
+
 
 .title_about, .title_question, .title_contact {
     position: absolute;
@@ -209,12 +155,6 @@ body {
     position: absolute;
     color: white;
     background: transparent;
-}
-
-@media all and (max-width: 450px) {
-    .title_contact {
-        font-size: 20px !important;
-    }
 }
 
 .container {
@@ -237,16 +177,7 @@ body {
     top: 0;
     left: 0;
 }
-@media all and (max-width: 930px) {
-    .container:after {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .container:after {
-        width: 60px;
-    }
-}
+
 .container:before {
     content: "";
     position: absolute;
@@ -256,45 +187,17 @@ body {
     top: 0;
     right: 0;
 }
-@media all and (max-width: 930px) {
-    .container:before {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .container:before {
-        width: 60px;
-    }
-}
+
 
 .about {
     padding: 146px 0 159px 0;
-}
-@media all and (max-width: 800px) {
-    .about {
-        padding: 146px 15px 159px 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .about {
-        padding: 50px 15px;
-    }
 }
 
 .about_wrap {
     max-width: 556px;
     margin: 77px 0 53px 0;
 }
-@media all and (max-width: 650px) {
-    .about_wrap {
-        max-width: 350px;
-    }
-}
-@media all and (max-width: 450px) {
-    .about_wrap {
-        max-width: 250px;
-    }
-}
+
 .about_wrap span {
     display: flex;
     font-size: 16px;
@@ -314,16 +217,7 @@ body {
     background: url("assets/services_bg.png") no-repeat;
     background-size: cover;
 }
-@media all and (max-width: 800px) {
-    .services {
-        padding: 0 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .services {
-        padding: 50px 15px;
-    }
-}
+
 
 .services_container {
     margin: 127px 0 109px 0;
@@ -341,16 +235,7 @@ body {
     top: 0;
     left: 0;
 }
-@media all and (max-width: 930px) {
-    .services_container:after {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .services_container:after {
-        width: 60px;
-    }
-}
+
 .services_container:before {
     content: "";
     position: absolute;
@@ -360,37 +245,13 @@ body {
     top: 0;
     right: 0;
 }
-@media all and (max-width: 930px) {
-    .services_container:before {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .services_container:before {
-        width: 60px;
-    }
-}
-@media all and (max-width: 450px) {
-    .services_container {
-        margin: 0;
-    }
-}
 
 .services_wrap {
     display: flex;
     margin: 78px 0 56px 0;
     max-width: 551px;
 }
-@media all and (max-width: 650px) {
-    .services_wrap {
-        max-width: 350px;
-    }
-}
-@media all and (max-width: 450px) {
-    .services_wrap {
-        max-width: 250px;
-    }
-}
+
 .services_wrap span {
     display: flex;
     font-size: 16px;
@@ -404,27 +265,12 @@ body {
     display: flex;
     justify-content: center;
 }
-@media all and (max-width: 800px) {
-    .question {
-        padding: 0 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .question {
-        padding: 50px 15px;
-    }
-}
 
 .question_container {
     margin: 105px 0 114px 0;
     flex-direction: column;
     align-items: center;
     position: relative;
-}
-@media all and (max-width: 450px) {
-    .question_container {
-        margin: 0;
-    }
 }
 
 .card {
@@ -434,18 +280,7 @@ body {
     max-width: 541px;
     margin: 50px 0 50px 0;
 }
-@media all and (max-width: 650px) {
-    .card {
-        max-width: 350px;
-    }
-}
-@media all and (max-width: 450px) {
-    .card {
-        max-width: 250px;
-        margin: 0;
-        padding: 25px 0;
-    }
-}
+
 .card img {
     width: 81px;
     height: 84px;
@@ -465,25 +300,12 @@ body {
     text-align: center;
     text-transform: none;
 }
-@media all and (max-width: 650px) {
-    .card span {
-        font-size: 24px;
-    }
-}
-@media all and (max-width: 450px) {
-    .card span {
-        font-size: 20px;
-    }
-}
+
 
 .first_card {
     margin: 162px 0 50px 0;
 }
-@media all and (max-width: 450px) {
-    .first_card {
-        margin: 0;
-    }
-}
+
 
 .container_img {
     display: flex;
@@ -491,11 +313,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
 }
-@media all and (max-width: 800px) {
-    .container_img {
-        flex-direction: column;
-    }
-}
+
 
 .col_img {
     display: flex;
@@ -535,11 +353,6 @@ body {
     line-height: 1.5;
     transition: all 1s linear;
 }
-@media all and (max-width: 800px) {
-    .item_img span {
-        font-size: 26px;
-    }
-}
 
 .topworkz {
     background: url("assets/top.png") no-repeat;
@@ -575,17 +388,8 @@ body {
     display: flex;
     justify-content: center;
 }
-@media all and (max-width: 800px) {
-    .contact {
-        padding: 0 15px;
-    }
-}
 
-@media all and (max-width: 450px) {
-    .contact {
-        padding: 50px 15px;
-    }
-}
+
 
 .contact_container {
     position: relative;
@@ -593,11 +397,7 @@ body {
     justify-content: center;
     margin: 137px 0 77px 0;
 }
-@media all and (max-width: 450px) {
-    .contact_container {
-        margin: 0;
-    }
-}
+
 
 .contact_wrap {
     display: flex;
@@ -613,16 +413,7 @@ body {
     text-align: center;
     line-height: 1.5;
 }
-@media all and (max-width: 650px) {
-    .contact_wrap span {
-        max-width: 350px;
-    }
-}
-@media all and (max-width: 450px) {
-    .contact_wrap span {
-        max-width: 250px;
-    }
-}
+
 .contact_wrap a {
     display: flex;
     align-items: center;
@@ -639,11 +430,6 @@ body {
     font-weight: 300;
     margin: 0;
     line-height: 1.5;
-}
-@media all and (max-width: 650px) {
-    .contact_wrap a {
-        max-width: 200px;
-    }
 }
 
 .footer_wrap {
@@ -676,10 +462,4 @@ body {
     font-weight: 300;
     line-height: 1.5;
 }
-@media all and (max-width: 450px) {
-    .link_wrap a {
-        font-size: 11px;
-    }
-}
 
-/*# sourceMappingURL=main.css.map */

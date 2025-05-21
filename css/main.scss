@@ -82,6 +82,11 @@ body{
   //margin-bottom: 146px;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .header_nav{
   position: fixed;
   display: flex;

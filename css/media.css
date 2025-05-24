@@ -1,253 +1,30 @@
-@media all and (max-width: 800px) {
-    .contact {
-        padding: 0 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .contact {
-        padding: 50px 15px;
+@media (max-width: 575px) {
+    .hero__title {
+        font-size: 1.25rem;
     }
 }
 
-@media all and (max-width: 450px) {
-    .contact_container {
-        margin: 0;
+@media (max-width: 767px) {
+    .hero__title {
+        font-size: 1.5rem;
+    }
+    .section__content h2 {
+        font-size: 1rem;
+    }
+    .hero__description {
+        font-size: 1rem;
     }
 }
 
-@media all and (max-width: 650px) {
-    .contact_wrap span {
-        max-width: 350px;
+@media (max-width: 1199px) {
+    .hero__title {
+        font-size: 2rem;
     }
-}
-@media all and (max-width: 450px) {
-    .contact_wrap span {
-        max-width: 250px;
+    .section__content h2 {
+        font-size: 1.5rem;
     }
-}
-
-@media all and (max-width: 650px) {
-    .contact_wrap a {
-        max-width: 200px;
+    .hero__description {
+        font-size: 1.5rem;
     }
 }
 
-@media all and (max-width: 450px) {
-    .link_wrap a {
-        font-size: 11px;
-    }
-}
-
-@media all and (max-width: 650px) {
-    .burger {
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        justify-content: flex-end;
-        align-items: center;
-        z-index: 999;
-    }
-}
-
-@media all and (max-width: 450px) {
-    .logo_main {
-        margin: 50px 0;
-    }
-}
-
-@media all and (max-width: 800px) {
-    .logo_main img {
-        max-width: 45px;
-        max-height: 49px;
-    }
-}
-@media all and (max-width: 800px) {
-    .title_main {
-        font-size: 36px;
-        padding: 0 10px;
-    }
-}
-@media all and (max-width: 450px) {
-    .title_main {
-        font-size: 24px;
-    }
-}
-
-@media all and (max-width: 850px) {
-    .description {
-        max-width: 373px;
-        padding: 0 10px;
-    }
-}
-@media all and (max-width: 450px) {
-    .description {
-        margin-bottom: 50px;
-    }
-}
-
-@media all and (max-width: 650px) {
-    .title {
-        font-size: 36px;
-        top: -18px;
-    }
-}
-@media all and (max-width: 450px) {
-    .title {
-        font-size: 20px;
-        top: -10px;
-    }
-}
-
-@media all and (max-width: 450px) {
-    .title_contact {
-        font-size: 20px !important;
-    }
-}
-@media all and (max-width: 930px) {
-    .container:after {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .container:after {
-        width: 60px;
-    }
-}
-@media all and (max-width: 930px) {
-    .container:before {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .container:before {
-        width: 60px;
-    }
-}
-@media all and (max-width: 800px) {
-    .about {
-        padding: 146px 15px 159px 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .about {
-        padding: 50px 15px;
-    }
-}
-
-@media all and (max-width: 650px) {
-    .about_wrap {
-        max-width: 350px;
-    }
-}
-@media all and (max-width: 450px) {
-    .about_wrap {
-        max-width: 250px;
-    }
-}
-@media all and (max-width: 800px) {
-    .services {
-        padding: 0 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .services {
-        padding: 50px 15px;
-    }
-}
-@media all and (max-width: 930px) {
-    .services_container:after {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .services_container:after {
-        width: 60px;
-    }
-}
-
-@media all and (max-width: 930px) {
-    .services_container:before {
-        width: 150px;
-    }
-}
-@media all and (max-width: 580px) {
-    .services_container:before {
-        width: 60px;
-    }
-}
-@media all and (max-width: 450px) {
-    .services_container {
-        margin: 0;
-    }
-}
-@media all and (max-width: 650px) {
-    .services_wrap {
-        max-width: 350px;
-    }
-}
-@media all and (max-width: 450px) {
-    .services_wrap {
-        max-width: 250px;
-    }
-}
-
-@media all and (max-width: 800px) {
-    .question {
-        padding: 0 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .question {
-        padding: 50px 15px;
-    }
-}
-@media all and (max-width: 450px) {
-    .question_container {
-        margin: 0;
-    }
-}
-
-@media all and (max-width: 650px) {
-    .card {
-        max-width: 350px;
-    }
-}
-@media all and (max-width: 450px) {
-    .card {
-        max-width: 250px;
-        margin: 0;
-        padding: 25px 0;
-    }
-}
-
-@media all and (max-width: 650px) {
-    .card span {
-        font-size: 24px;
-    }
-}
-@media all and (max-width: 450px) {
-    .card span {
-        font-size: 20px;
-    }
-}
-
-@media all and (max-width: 450px) {
-    .first_card {
-        margin: 0;
-    }
-}
-
-@media all and (max-width: 800px) {
-    .container_img {
-        flex-direction: column;
-    }
-}
-
-@media all and (max-width: 800px) {
-    .item_img span {
-        font-size: 26px;
-    }
-}

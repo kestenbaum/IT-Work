@@ -387,8 +387,6 @@ html {
     border-radius: 50% !important;
 }
 
-
-
 .slide-item {
     display: flex;
     flex-direction: column;
@@ -396,8 +394,8 @@ html {
 }
 
 .slide-item img {
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
     padding: 10px 0 10px 10px;
 }
 
@@ -405,4 +403,34 @@ html {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.input__contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    min-width: 20rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.form__contact button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.form__contact button:hover {
+    background-color: #444444;
+    color: #fff;
+    transition: all 0.4s ease;
 }

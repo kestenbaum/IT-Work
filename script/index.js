@@ -1,58 +1,44 @@
-const getSelectorHeroDescription = document.querySelector('.hero__description');
-const buttons = document.querySelectorAll('.accordion-wrapper');
-const burger_menu = document.querySelector('.burger__menu');
-const burger_navigate = document.querySelector('.burger__navigate');
+const heroDescription  = document.querySelector('.hero__description');
+const burgerMenu  = document.querySelector('.burger__menu');
+const burgerNavigate = document.querySelector('.burger__navigate');
+const items = document.querySelectorAll('.accordion-item');
 
 const HERO_TEXT = "We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, design and product management.";
-let index = 0;
 
-burger_menu.onclick = (event) => {
-    event.preventDefault();
-    if (!burger_navigate.classList.contains('active')) {
-        burger_navigate.classList.add('active');
+burgerMenu.onclick = () => {
+    if (!burgerNavigate.classList.contains('active')) {
+        burgerNavigate.classList.add('active');
     } else {
-        burger_navigate.classList.remove('active');
+        burgerNavigate.classList.remove('active');
     }
 }
 
-burger_navigate.onclick = (event) => {
-    event.preventDefault();
-    if (event.target.tagName === 'A') {
-        burger_navigate.classList.remove('active');
+burgerNavigate.onclick = (event) => {
+    if (event.target.tagName.toLowerCase() === 'a') {
+        burgerNavigate.classList.remove('active');
     }
 }
 
-buttons.forEach(button => {
-    button.onclick = () => {
-        const content = button.nextElementSibling;
-        const isOpen = content.style.maxHeight;
+items.forEach(item => {
+    const btn = item.querySelector('.accordion-title');
+    const content = item.querySelector('.accordion-content');
+    const wrapper = item.querySelector('.accordion__wrapper');
+    
+    wrapper.addEventListener('click', () => {
+        const isOpen = btn.classList.contains('active');
         
-        button.classList.toggle('active');
-        
-        if (isOpen) {
-            content.style.maxHeight = null;
-            content.style.paddingBottom = '0';
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-        
-        document.querySelectorAll('.accordion-content').forEach(c => c.style.maxHeight = null);
-        document.querySelectorAll('.accordion-button').forEach(b => b.classList.remove('active'));
+        items.forEach(i => {
+            i.querySelector('.accordion-title').classList.remove('active');
+            i.querySelector('.accordion-content').style.maxHeight = null;
+        });
         
         if (!isOpen) {
-            content.style.maxHeight = content.scrollHeight + "px";
-            button.classList.add('active');
+            btn.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
         }
-    };
+    });
 });
 
-function typedTextHeroDescription() {
-    if (index < HERO_TEXT.length) {
-        getSelectorHeroDescription.textContent += HERO_TEXT.charAt(index);
-        index++;
-        setTimeout(typedTextHeroDescription, 25);
-    }
-}
 
 const swiper = new Swiper(".mySwiper", {
     loop: true,
@@ -68,5 +54,18 @@ const swiper = new Swiper(".mySwiper", {
     }
 });
 
-typedTextHeroDescription();
+function typedText(element, text, speed = 25) {
+    element.textContent = '';
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
+
+typedText(heroDescription, HERO_TEXT);
 

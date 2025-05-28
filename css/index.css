@@ -20,7 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
 }
 
 .header__logo img {
@@ -79,13 +79,14 @@ header {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 0;
     height: 100%;
     width: 50%;
     background-color: #13233A;
     z-index: 3;
     transition: all ease 1s;
+    border-left: 1px solid #eeeeee;
 }
 
 .burger__navigate ul {
@@ -212,6 +213,21 @@ header {
     margin-bottom: 50px;
 }
 
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-title.active + .accordion-arrow {
+    transform: rotate(90deg);
+}
+
+.accordion-title.active {
+    color: #3498db;
+}
+
+
 .accordion__wrapper {
     display: flex;
     justify-content: center;
@@ -249,7 +265,6 @@ header {
     max-height: 0;
     overflow: hidden;
     padding: 0 1rem;
-    background-color: #fafafa;
     color: #444;
     transition: max-height 0.4s ease;
 }

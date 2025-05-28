@@ -85,7 +85,7 @@ header {
     width: 50%;
     background-color: #13233A;
     z-index: 3;
-    transition:  all ease 1s;
+    transition: all ease 1s;
 }
 
 .burger__navigate ul {
@@ -190,43 +190,59 @@ header {
     max-height: 38px;
 }
 
-.accordion-button {
-    position: relative;
-    border: none;
-    padding: 1rem;
+.about__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1300px;
+    background-color: #13233A;
+    padding: 80px 100px;
+    border-radius: 30px;
+}
+
+.about__content h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #eeeeee;
+}
+
+.about__content p {
+    font-size: 20px;
+    color: #eeeeee;
+    margin-bottom: 50px;
+}
+
+.accordion__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 780px;
     width: 100%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
     text-align: left;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    color: #333;
     transition: background-color 0.3s;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    border-radius: 12px;
-    background-color: white;
-    margin-bottom: .5rem;
 }
 
-.accordion-button:hover {
-    background-color: #f9f9f9;
-}
-
-.accordion-button .arrow {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%) rotate(0deg);
+.accordion-arrow {
     width: 0.6rem;
     height: 0.6rem;
-    border-right: 2px solid #333;
-    border-bottom: 2px solid #333;
+    border-right: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
     transform-origin: center;
     transition: transform 0.3s ease;
     rotate: 45deg;
-}
-
-.accordion-button.active .arrow {
-    rotate: -135deg;
 }
 
 .accordion-content {

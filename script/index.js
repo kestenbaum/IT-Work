@@ -1,9 +1,9 @@
-const getSelectorHeroDescription = document.querySelector('.hero__description')
-const buttons = document.querySelectorAll('.accordion-button');
-const HERO_TEXT = "We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, design and product management."
-const burger_menu = document.querySelector('.burger__menu')
-const burger_navigate = document.querySelector('.burger__navigate')
+const getSelectorHeroDescription = document.querySelector('.hero__description');
+const buttons = document.querySelectorAll('.accordion-wrapper');
+const burger_menu = document.querySelector('.burger__menu');
+const burger_navigate = document.querySelector('.burger__navigate');
 
+const HERO_TEXT = "We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, design and product management.";
 let index = 0;
 
 burger_menu.onclick = (event) => {
@@ -23,7 +23,7 @@ burger_navigate.onclick = (event) => {
 }
 
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
+    button.onclick = () => {
         const content = button.nextElementSibling;
         const isOpen = content.style.maxHeight;
         
@@ -43,7 +43,7 @@ buttons.forEach(button => {
             content.style.maxHeight = content.scrollHeight + "px";
             button.classList.add('active');
         }
-    });
+    };
 });
 
 function typedTextHeroDescription() {

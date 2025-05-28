@@ -1,8 +1,26 @@
 const getSelectorHeroDescription = document.querySelector('.hero__description')
 const buttons = document.querySelectorAll('.accordion-button');
-const text = "We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, design and product management."
+const HERO_TEXT = "We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, design and product management."
+const burger_menu = document.querySelector('.burger__menu')
+const burger_navigate = document.querySelector('.burger__navigate')
 
 let index = 0;
+
+burger_menu.onclick = (event) => {
+    event.preventDefault();
+    if (!burger_navigate.classList.contains('active')) {
+        burger_navigate.classList.add('active');
+    } else {
+        burger_navigate.classList.remove('active');
+    }
+}
+
+burger_navigate.onclick = (event) => {
+    event.preventDefault();
+    if (event.target.tagName === 'A') {
+        burger_navigate.classList.remove('active');
+    }
+}
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -29,8 +47,8 @@ buttons.forEach(button => {
 });
 
 function typedTextHeroDescription() {
-    if (index < text.length) {
-        getSelectorHeroDescription.textContent += text.charAt(index);
+    if (index < HERO_TEXT.length) {
+        getSelectorHeroDescription.textContent += HERO_TEXT.charAt(index);
         index++;
         setTimeout(typedTextHeroDescription, 25);
     }

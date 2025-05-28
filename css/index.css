@@ -11,6 +11,94 @@ html {
     padding: 0 1rem;
 }
 
+header {
+    background: #13233A;
+    border-bottom: 1px solid #fff;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header__logo img {
+    height: 30px;
+    width: 30px;
+}
+
+.header__navigate ul {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigate ul li {
+    margin: 0 2rem;
+}
+
+.header__navigate ul li a {
+    font-size: 1rem;
+    color: #eeeeee;
+}
+
+.burger__menu {
+    display: none;
+    align-items: center;
+    height: 40px;
+    width: 20px;
+}
+
+.burger__menu div {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.burger__menu div:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #eeeeee;
+    transform: translateY(5px);
+}
+
+.burger__menu div:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #eeeeee;
+    transform: translateY(-5px);
+}
+
+.burger__navigate {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #13233A;
+    z-index: 3;
+    transition:  all ease 1s;
+}
+
+.burger__navigate ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.burger__link {
+    color: #eeeeee;
+    cursor: pointer;
+}
+
 .section__content {
     display: flex;
     justify-content: center;
@@ -112,7 +200,7 @@ html {
     cursor: pointer;
     color: #333;
     transition: background-color 0.3s;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     background-color: white;
     margin-bottom: .5rem;
@@ -184,7 +272,6 @@ html {
     border-bottom: 2px solid white;
     border-right: 2px solid white;
 }
-
 
 
 .services_wrap {
@@ -273,7 +360,6 @@ html {
     flex: 1 1 33.333%;
     margin-left: 5px;
 }
-
 
 
 .contact {
@@ -455,4 +541,8 @@ footer {
 
 .footer__content a {
     color: #ffffff;
+}
+
+.active {
+    display: flex;
 }

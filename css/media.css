@@ -1,4 +1,11 @@
 @media (max-width: 575px) {
+    .header__navigate {
+        display: none;
+    }
+    .burger__menu {
+        display: flex;
+        cursor: pointer;
+    }
     .hero__title {
         font-size: 1.25rem;
     }

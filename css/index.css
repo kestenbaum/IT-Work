@@ -100,6 +100,10 @@ header {
     cursor: pointer;
 }
 
+.section {
+    overflow: hidden;
+}
+
 .section__content {
     display: flex;
     justify-content: center;
@@ -666,4 +670,49 @@ footer {
 
 .active {
     display: flex;
+}
+
+.decor-section {
+    background: #13233A;
+    position: relative;
+}
+
+.decor-polygon-1 {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 1vw;
+    left: -9vw;
+    background-image: url("/assets/icons/Polygon 1.png");
+    background-size: cover;
+}
+
+.decor-ellipse-1 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    bottom: -5vw;
+    left: -7vw;
+    background-image: url("/assets/icons/Ellipse 1.png");
+    background-size: cover;
+}
+
+.decor-ellipse-2 {
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    top: 6vw;
+    right: -11vw;
+    background-image: url("/assets/icons/Ellipse 2.png");
+    background-size: cover;
+}
+
+.decor-polygon-2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: -6vw;
+    right: 5vw;
+    background-image: url("/assets/icons/Polygon 2.png");
+    background-size: cover;
 }

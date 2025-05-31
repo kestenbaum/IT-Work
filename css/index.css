@@ -213,6 +213,18 @@ header {
     margin-bottom: 50px;
 }
 
+.slider__block {
+    position: relative;
+    background-color: #13233A;
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+
+.section__content h2 {
+    color: #eeeeee;
+}
+
 .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -499,6 +511,29 @@ header {
     background-color: #fff !important;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 2vw;
+}
+
+.swiper-button-next {
+    right: 2vw;
+}
 .swiper-pagination-bullet {
     width: 10px !important;
     height: 10px !important;
@@ -508,19 +543,33 @@ header {
 .slide-item {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.slide-item img {
-    height: 3rem;
-    width: 3rem;
-    padding: 10px 0 10px 10px;
-}
-
-.slide-item div {
+.slide-header {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    min-height: 60px;
+    padding: 0 20px;
+}
+
+.slide-header img {
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.slide-header h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
 }
 
 .input__contact {

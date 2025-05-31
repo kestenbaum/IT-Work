@@ -43,15 +43,15 @@ items.forEach(item => {
 const swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 20,
-    slidesPerView: 1,
+    slidesPerView: 2,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true
     },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-    }
 });
 
 function typedText(element, text, speed = 25) {
